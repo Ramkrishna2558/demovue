@@ -105,3 +105,52 @@ This project uses Spring Boot for the backend and MySQL Workbench for database m
         spring.datasource.password=your_password
         spring.jpa.hibernate.ddl-auto=update
         ```
+    
+    
+    ## Tailwind CSS Setup
+    
+    Follow these steps to add Tailwind CSS to your Nuxt 3 project:
+    
+    1. Install Tailwind CSS and its peer dependencies:
+        ```bash
+        npm install -D @nuxtjs/tailwindcss
+        ```
+    
+    2. Add the Tailwind CSS module to your Nuxt configuration by updating your `nuxt.config.ts`:
+        ```ts
+        export default defineNuxtConfig({
+          modules: ['@nuxtjs/tailwindcss'],
+        })
+        ```
+    
+    3. (Optional) Customize your Tailwind configuration by creating a `tailwind.config.js` file:
+        ```js
+        module.exports = {
+          content: [
+            './components/**/*.{vue,js}',
+            './layouts/**/*.vue',
+            './pages/**/*.vue',
+            './plugins/**/*.{js,ts}',
+            './nuxt.config.{js,ts}',
+          ],
+          theme: {
+            extend: {},
+          },
+          plugins: [],
+        }
+        ```
+    
+    4. (Optional) Create a custom CSS file (e.g., `assets/css/main.css`) and import Tailwind’s base, components, and utilities:
+        ```css
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+        ```
+    
+    5. Include your custom CSS file in Nuxt by updating `nuxt.config.ts`:
+        ```ts
+        export default defineNuxtConfig({
+          css: ['~/assets/css/main.css'],
+          modules: ['@nuxtjs/tailwindcss'],
+        })
+        ```
