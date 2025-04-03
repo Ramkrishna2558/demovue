@@ -73,3 +73,35 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+
+
+## Backend (Spring Boot & MySQL)
+
+This project uses Spring Boot for the backend and MySQL Workbench for database management.
+
+1. Change to the backend directory:
+    ```bash
+    cd backend
+    ```
+
+2. Build and run the Spring Boot application:
+    ```bash
+    ./mvnw spring-boot:run
+    ```
+   or with Maven:
+    ```bash
+    mvn spring-boot:run
+    ```
+
+3. Database Setup:
+    - Ensure MySQL Workbench is installed and running.
+    - Create a new database using MySQL Workbench.
+    - Update the Spring Boot configuration (application.properties or application.yml) with your MySQL credentials and connection URL.
+    - Example configuration in application.properties:
+        ```properties
+        spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
+        spring.datasource.username=your_username
+        spring.datasource.password=your_password
+        spring.jpa.hibernate.ddl-auto=update
+        ```
