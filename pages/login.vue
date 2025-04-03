@@ -4,8 +4,11 @@
       <h1 class="text-2xl font-bold mb-4 text-[#ffff]">LOGIN</h1>
       <input type="text" class="border-1 rounded p-2 bg-[#cbd4ff] text-[#8fabff]" v-model="username" name="username" id="username" placeholder="Username"><br/>
       <input type="password" class="border-1 rounded p-2 bg-[#cbd4ff] text-[#8fabff]" v-model="password" name="password" id="password" placeholder="Password"><br/>
-      <button class="border-2 rounded border-white px-6 text-[#ffff] py-2 bg-[#2630ff]" type="submit">Get me in</button>
-    </form>
+<div class="button flex gap-2">
+  <button class="border-2 rounded border-white px-4 text-[#ffff] py-2 bg-[#2630ff]" type="submit">Get me in</button>
+  <NuxtLink to="/createUser" class="border-2 rounded border-white px-4 text-[#ffff] py-2 bg-[#2630ff]">Register</NuxtLink>
+
+</div>    </form>
   </div>
 </template>
 

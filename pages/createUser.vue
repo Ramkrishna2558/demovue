@@ -1,7 +1,7 @@
 <template>
   <div class="container mt-5 d-flex justify-content-center justify-center ">
-    <div class="bg-white p-6 shadow-lg rounded-lg w-full max-w-md mx-auto">
-      <h2 class="text-2xl font-semibold text-center mb-4">Add User</h2>
+    <div class="bg-white p-6 shadow-lg rounded-lg w-full max-w-md mx-100">
+      <h2 class="text-2xl font-semibold text-center mb-4">Add/Register User</h2>
       <form @submit.prevent="submitForm">
       <input
         v-model="user.name"
