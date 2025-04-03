@@ -1,3 +1,9 @@
+# Prerequisites
+
+- Ensure you have JDK/JRE installed to run the Spring Boot backend.
+- Ensure Node.js is installed to run the Nuxt frontend.
+- MySQL Workbench (or another MySQL client) is recommended for managing your database.
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
